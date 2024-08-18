@@ -16,7 +16,7 @@
                 <li><a href="#">Gallery</a></li>
             </ul>
             <div class="logo">
-                <img src="logo-header.png" alt="Logo">
+                <img src="./resources/logo-header.png" alt="Logo">
             </div>
             <ul class="nav-right">
                 <li><a href="#">Services</a></li>
@@ -28,55 +28,55 @@
                 <h1>We Turn Skin Into Art;</h1>
         </div>
                       
-        <button class="book-now">BOOK NOW</button>
+        <button class="btn-book-now">BOOK NOW</button>
 
     </header>
     <!-- Artist Section -->
-     <section class="artist-section">
-        <div class="artist-content">
-            <h1>Artists, <br>Masterpieces in Motion 
-            </h1>
-            <h2>Crafting dreams into Stunning Wearable Art.
-            </h2>
-        </div>
+    <section class="artist-content">
+        <h1>Artists, <br>Masterpieces in Motion 
+        </h1>
+        <h2>Crafting dreams into Stunning Wearable Art.
+        </h2>
+    </section> 
+    <section class="artist-section">
         <div class="artists-gallery">
             <div class="artist">
-                <img src="img-artist-1.png" alt="Artist 1">
+                <img src="./resources/img-artist-1.png" alt="Artist 1">
                 <div class="hover-effect">
                     <span class="artist-name">Kathy Kate</span>
                     <span class="artist-pos">Tattoo Artist</span>
                 </div>
             </div>
             <div class="artist">
-                <img src="img-artist-2.png" alt="Artist 2">
+                <img src="./resources/img-artist-2.png" alt="Artist 2">
                 <div class="hover-effect">
                     <span class="artist-name">Solana Mercure</span>
                     <span class="artist-pos">Tattoo Artist</span>
                 </div>
             </div>
             <div class="artist">
-                <img src="img-artist-3.png" alt="Artist 3">
+                <img src="./resources/img-artist-3.png" alt="Artist 3">
                 <div class="hover-effect">
                     <span class="artist-name">Benn Shakespear</span>
                     <span class="artist-pos">Tattoo Artist</span>
                 </div>
             </div>
             <div class="artist">
-                <img src="img-artist-4.png" alt="Artist 4">
+                <img src="./resources/img-artist-4.png" alt="Artist 4">
                 <div class="hover-effect">
                     <span class="artist-name">Ava Saturne</span>
                     <span class="artist-pos">Tattoo Artist</span>
                 </div>
             </div>
             <div class="artist">
-                <img src="img-artist-5.png" alt="Artist 5">
+                <img src="./resources/img-artist-5.png" alt="Artist 5">
                 <div class="hover-effect">
                     <span class="artist-name">Meow Jupitere</span>
                     <span class="artist-pos">Tattoo Artist</span>
                 </div>
             </div>
             <div class="artist">
-                <img src="img-artist-6.png" alt="Artist 6">
+                <img src="./resources/img-artist-6.png" alt="Artist 6">
                 <div class="hover-effect">
                     <span class="artist-name">Sato Moon</span>
                     <span class="artist-pos">Tattoo Artist</span>
@@ -84,9 +84,91 @@
             </div>
         </div>
 
-        <button class="inquire">INQUIRE NOW</button>
+        <button class="btn-inquire">INQUIRE NOW</button>
      </section>
+<!-- Blank Section -->
+    <div class="blank-section"></div>
+<!-- Service Section -->
+    <section class="service-section">
+        <div class="service-content">
+            <h1>Services;</h1>
+            <h2>
+                Harmonizing Art and Expression
+            </h2>
+        </div>
+       <div class="btn-area">
+            <div class="btn-service">
+                <a href="#" class="btn">Tattoos</a>
+            </div>
+            <div class="btn-service">
+                <a href="#" class="btn">Aesthetics</a>
+            </div>
+        </div>
+    </section>
+<!-- Works Gallery Section -->
+        <div class="artist-content">
+            <h1>Our Works;
+            </h1>
+            <h2>Ink Your Memories, Wear Your Story.
+            </h2>
+        </div>
+    <section class="work-gallery">
+        
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="./resources/img-works-1.png" alt="Work 1" class="carousel-image">
+                <img src="./resources/img-works-2.png" alt="Work 2" class="carousel-image">
+                <img src="./resources/img-works-3.png" alt="Work 3" class="carousel-image">
+                <img src="./resources/img-works-1.png" alt="Work 4" class="carousel-image">
+                <img src="./resources/img-works-2.png" alt="Work 5" class="carousel-image">
+                <img src="./resources/img-works-3.png" alt="Work 6" class="carousel-image">
+                <!-- Add more images as needed -->
+            </div>
 
-    
+            <div class="carousel">
+                <img src="./resources/img-works-1.png" alt="Work 1" class="carousel-image">
+                <img src="./resources/img-works-2.png" alt="Work 2" class="carousel-image">
+                <img src="./resources/img-works-3.png" alt="Work 3" class="carousel-image">
+                <img src="./resources/img-works-1.png" alt="Work 4" class="carousel-image">
+                <img src="./resources/img-works-2.png" alt="Work 5" class="carousel-image">
+                <img src="./resources/img-works-3.png" alt="Work 6" class="carousel-image">
+                <!-- Add more images as needed -->
+            </div>
+           
+        </div>
+        <div class="carousel-navigation">
+            <button id="prevBtn" class="nav-arrow">←</button>
+            <button id="nextBtn" class="nav-arrow">→</button>
+        </div> 
+    </section>
+<!-- Blank Section -->
+<div class="blank-section">
+    <button class="btn-book-now">BOOK NOW</button>
+
+</div>
+
+<section class="footer">
+    <div>
+        
+        
+    </div>
+
+</section>
+
+
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.nav-section');
+            
+            if (window.scrollY > 50) { 
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+    </script>
+
 </body>
 </html>
