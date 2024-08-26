@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JYSN Tattoo and Aethetics</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div id="nav-section">
+            <div class="nav-items">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./resources/logo-header.png" alt="Logo">
+                    </a>
+                </div>
+                <ul>
+                    <!-- <li><a href="">Home</a></li> -->
+                    <li><a href="#artist">Artists</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#clinic">Clinic</a></li>
+                </ul>
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>    
+    
+        <div class="hero-content">
+            <h1>We Turn Skin Into Art;</h1>
+        </div>
+        <button id="book-now-btn" class="btn-book-now">BOOK NOW</button>
+    </header>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-items ul');
+        const navLinks = document.querySelectorAll('.nav-items ul li a');
+    
+            burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            nav.classList.toggle('active');
+
+            burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            nav.classList.toggle('active');
+            })});
+
+    // Close the burger menu when a nav item is clicked
+            navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+            burger.classList.remove('active');
+            nav.classList.remove('active');
+            })});
+    </script>
+
+    <!-- Artist Section -->
+    <section class="artist-content">
+        <h1>Artists, <br>Masterpieces in Motion</h1>
+        <h2>Crafting dreams into Stunning Wearable Art.</h2>
+    </section>
+
+    <section class="artist-section">
+        <div class="artists-gallery" id="artist">
+            <!-- Artist Cards -->
+            <div class="artist">
+                <img src="./resources/img-artist-1.png" alt="Artist 1">
+                <div class="hover-effect">
+                    <span class="artist-name">Kathy Kate</span>
+                    <span class="artist-pos">Tattoo Artist</span>
+                </div>
+            </div>
+            <div class="artist">
+                <img src="./resources/img-artist-2.png" alt="Artist 2">
+                <div class="hover-effect">
+                    <span class="artist-name">Solana Mercure</span>
+                    <span class="artist-pos">Tattoo Artist</span>
+                </div>
+            </div>
+            <div class="artist">
+                <img src="./resources/img-artist-3.png" alt="Artist 3">
+                <div class="hover-effect">
+                    <span class="artist-name">Benn Shakespear</span>
+                    <span class="artist-pos">Tattoo Artist</span>
+                </div>
+            </div>
+            <div class="artist">
+                <img src="./resources/img-artist-4.png" alt="Artist 4">
+                <div class="hover-effect">
+                    <span class="artist-name">Ava Saturne</span>
+                    <span class="artist-pos">Tattoo Artist</span>
+                </div>
+            </div>
+            <div class="artist">
+                <img src="./resources/img-artist-5.png" alt="Artist 5">
+                <div class="hover-effect">
+                    <span class="artist-name">Meow Jupitere</span>
+                    <span class="artist-pos">Tattoo Artist</span>
+                </div>
+            </div>
+            <div class="artist">
+                <img src="./resources/img-artist-6.png" alt="Artist 6">
+                <div class="hover-effect">
+                    <span class="artist-name">Sato Moon</span>
+                    <span class="artist-pos">Tattoo Artist</span>
+                </div>
+            </div>
+            <!-- Add more artist cards here -->
+        </div>
+        <button class="btn-inquire">
+            <a href="#contacts">INQUIRE NOW</a>
+            
+        </button>
+    </section>
+
+    <!-- Blank Section -->
+    <div class="blank-section" id="services"></div>
+
+    <!-- Service Section -->
+    <section class="service-section">
+        <div class="service-content">
+            <h1>Services;</h1>
+            <h2>Harmonizing Art and Expression</h2>
+        </div>
+        <div class="btn-area">
+            <div class="btn-service">
+                <a href="#" class="btn">Tattoos</a>
+            </div>
+            <div class="btn-service">
+                <a href="#" class="btn">Aesthetics</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Gallery Section -->
+    <section class="work-gallery">
+        <div class="artist-content" id="gallery">
+            <h1>Our Works;</h1>
+            <h2>Ink Your Memories, Wear Your Story.</h2>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="./resources/img-works-1.png" alt="Work 1" class="carousel-image">
+                <img src="./resources/img-works-2.png" alt="Work 2" class="carousel-image">
+                <img src="./resources/img-works-3.png" alt="Work 3" class="carousel-image">
+                <img src="./resources/img-works-1.png" alt="Work 4" class="carousel-image">
+                <img src="./resources/img-works-2.png" alt="Work 5" class="carousel-image">
+                <img src="./resources/img-works-3.png" alt="Work 6" class="carousel-image">
+            <!-- Add more images as needed -->
+            </div>
+            <div class="carousel">
+                <img src="./resources/img-works-1.png" alt="Work 1" class="carousel-image">
+                <img src="./resources/img-works-2.png" alt="Work 2" class="carousel-image">
+                <img src="./resources/img-works-3.png" alt="Work 3" class="carousel-image">
+                <img src="./resources/img-works-1.png" alt="Work 4" class="carousel-image">
+                <img src="./resources/img-works-2.png" alt="Work 5" class="carousel-image">
+                <img src="./resources/img-works-3.png" alt="Work 6" class="carousel-image">
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Blank Section -->
+    <div class="blank-section">
+        <button class="btn-book-now">
+            <a href="#contacts">BOOK NOW</a>
+        </button>
+    </div>
+
+</body>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-columns">
+            <!-- First Column: Location -->
+            <div class="footer-column location" id="clinic">
+                <h3>LOCATION</h3>
+                <p>123 Main Street, City, Country</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.4957706311743!2d125.67549549043181!3d7.298061300818753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f94539bd18efff%3A0x68255eaaec4e48ce!2sPanabo%20City%20Integrated%20Bus%20and%20Jeepney%20Terminal!5e0!3m2!1sen!2sph!4v1724500871379!5m2!1sen!2sph"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- Second Column: Logo & Company Name -->
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <a href="#">
+                        <img src="./resources/logo-footer.png" alt="Company Logo">
+                    </a>
+                </div>
+                <p>JYSN TATOO AND AESTHETICS</p>
+            </div>
+
+            <!-- Third Column: Hours, Socials & Contact -->
+            <div class="footer-column info" id="contacts">
+                <h3>HOURS</h3>
+                <p>Mon-Fri: 9AM - 6PM</p>
+                <p>Sat: 10AM - 4PM</p>
+                <h3>SOCIALS</h3>
+                <div class="social-icons">
+                    <a href="https://www.behance.net/gallery/177018867/Graphic-Design-Portfolio" target="_blank" class="fb">
+                        <img src="./resources/logo-fb.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.behance.net/gallery/177018867/Graphic-Design-Portfolio" target="_blank" class="ig">
+                        <img src="./resources/logo-ig.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.behance.net/gallery/177018867/Graphic-Design-Portfolio" target="_blank" class="tiktok">
+                        <img src="./resources/logo-tiktok.svg" alt="Tiktok">
+                    </a>
+                </div>
+                <h3>CONTACT</h3>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: <a href="mailto:jysn.alegarbes@gmail.com" target="_blank">info@company.com</a></p>
+            </div>
+        </div>
+
+        <!-- Divider Line -->
+        <div class="footer-divider"></div>
+
+        <!-- Copyright Section -->
+        <p class="footer-copyright">
+            Copyright © Company Name. All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- JavaScript for Scroll Effect -->
+    <script>
+        window.addEventListener('scroll', function () {
+            const nav = document.querySelector('#nav-section');
+            nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Scroll to footer on button click
+        document.getElementById('book-now-btn').addEventListener('click', function() {
+        document.getElementById('contacts').scrollIntoView({
+            behavior: 'smooth'
+        });
+        });
+
+    </script>
+</html>
