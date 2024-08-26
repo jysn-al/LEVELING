@@ -7,3 +7,9 @@ window.addEventListener('scroll', function() {
         nav.classList.remove('scrolled');
     }
 });
+
+document.getElementById('btn-book-now').addEventListener('click', function() {
+    document.getElementById('contacts').scrollIntoView({
+        behavior: 'smooth'  // Smooth scrolling effect
+    });
+});

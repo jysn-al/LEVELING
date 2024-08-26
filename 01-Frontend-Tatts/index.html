@@ -19,11 +19,11 @@
                     </a>
                 </div>
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <!-- <li><a href="">Home</a></li> -->
                     <li><a href="#artist">Artists</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#contacts">Clinic</a></li>
+                    <li><a href="#clinic">Clinic</a></li>
                 </ul>
                 <div class="burger">
                     <div></div>
@@ -36,7 +36,7 @@
         <div class="hero-content">
             <h1>We Turn Skin Into Art;</h1>
         </div>
-        <button class="btn-book-now">BOOK NOW</button>
+        <button id="book-now-btn" class="btn-book-now">BOOK NOW</button>
     </header>
 
     <script>
@@ -62,13 +62,13 @@
     </script>
 
     <!-- Artist Section -->
-    <section class="artist-content" id="artist">
+    <section class="artist-content">
         <h1>Artists, <br>Masterpieces in Motion</h1>
         <h2>Crafting dreams into Stunning Wearable Art.</h2>
     </section>
 
     <section class="artist-section">
-        <div class="artists-gallery">
+        <div class="artists-gallery" id="artist">
             <!-- Artist Cards -->
             <div class="artist">
                 <img src="./resources/img-artist-1.png" alt="Artist 1">
@@ -114,14 +114,17 @@
             </div>
             <!-- Add more artist cards here -->
         </div>
-        <button class="btn-inquire">INQUIRE NOW</button>
+        <button class="btn-inquire">
+            <a href="#contacts">INQUIRE NOW</a>
+            
+        </button>
     </section>
 
     <!-- Blank Section -->
-    <div class="blank-section"></div>
+    <div class="blank-section" id="services"></div>
 
     <!-- Service Section -->
-    <section class="service-section" id="services">
+    <section class="service-section">
         <div class="service-content">
             <h1>Services;</h1>
             <h2>Harmonizing Art and Expression</h2>
@@ -137,8 +140,8 @@
     </section>
 
     <!-- Works Gallery Section -->
-    <section class="work-gallery" id="gallery">
-        <div class="artist-content">
+    <section class="work-gallery">
+        <div class="artist-content" id="gallery">
             <h1>Our Works;</h1>
             <h2>Ink Your Memories, Wear Your Story.</h2>
         </div>
@@ -166,16 +169,18 @@
 
     <!-- Blank Section -->
     <div class="blank-section">
-        <button class="btn-book-now">BOOK NOW</button>
+        <button class="btn-book-now">
+            <a href="#contacts">BOOK NOW</a>
+        </button>
     </div>
 
 </body>
 
     <!-- Footer Section -->
     <footer>
-        <div class="footer-columns" id="contacts">
+        <div class="footer-columns">
             <!-- First Column: Location -->
-            <div class="footer-column location">
+            <div class="footer-column location" id="clinic">
                 <h3>LOCATION</h3>
                 <p>123 Main Street, City, Country</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.4957706311743!2d125.67549549043181!3d7.298061300818753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f94539bd18efff%3A0x68255eaaec4e48ce!2sPanabo%20City%20Integrated%20Bus%20and%20Jeepney%20Terminal!5e0!3m2!1sen!2sph!4v1724500871379!5m2!1sen!2sph"
@@ -194,7 +199,7 @@
             </div>
 
             <!-- Third Column: Hours, Socials & Contact -->
-            <div class="footer-column info">
+            <div class="footer-column info" id="contacts">
                 <h3>HOURS</h3>
                 <p>Mon-Fri: 9AM - 6PM</p>
                 <p>Sat: 10AM - 4PM</p>
@@ -231,5 +236,13 @@
             const nav = document.querySelector('#nav-section');
             nav.classList.toggle('scrolled', window.scrollY > 50);
         });
+
+        // Scroll to footer on button click
+        document.getElementById('book-now-btn').addEventListener('click', function() {
+        document.getElementById('contacts').scrollIntoView({
+            behavior: 'smooth'
+        });
+        });
+
     </script>
 </html>
