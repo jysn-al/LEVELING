@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header and Hero Section</title>
+    <title>JYSN Tattoo and Aethetics</title>
     <link rel="stylesheet" href="homepage.css">
 </head>
 
@@ -20,10 +20,10 @@
                 </div>
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">Artists</a></li>
-                    <li><a href="">Gallery</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Clinic</a></li>
+                    <li><a href="#artist">Artists</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contacts">Clinic</a></li>
                 </ul>
                 <div class="burger">
                     <div></div>
@@ -42,15 +42,27 @@
     <script>
         const burger = document.querySelector('.burger');
         const nav = document.querySelector('.nav-items ul');
+        const navLinks = document.querySelectorAll('.nav-items ul li a');
     
-        burger.addEventListener('click', () => {
+            burger.addEventListener('click', () => {
             burger.classList.toggle('active');
             nav.classList.toggle('active');
-        });
+
+            burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            nav.classList.toggle('active');
+            })});
+
+    // Close the burger menu when a nav item is clicked
+            navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+            burger.classList.remove('active');
+            nav.classList.remove('active');
+            })});
     </script>
 
     <!-- Artist Section -->
-    <section class="artist-content">
+    <section class="artist-content" id="artist">
         <h1>Artists, <br>Masterpieces in Motion</h1>
         <h2>Crafting dreams into Stunning Wearable Art.</h2>
     </section>
@@ -109,7 +121,7 @@
     <div class="blank-section"></div>
 
     <!-- Service Section -->
-    <section class="service-section">
+    <section class="service-section" id="services">
         <div class="service-content">
             <h1>Services;</h1>
             <h2>Harmonizing Art and Expression</h2>
@@ -125,7 +137,7 @@
     </section>
 
     <!-- Works Gallery Section -->
-    <section class="work-gallery">
+    <section class="work-gallery" id="gallery">
         <div class="artist-content">
             <h1>Our Works;</h1>
             <h2>Ink Your Memories, Wear Your Story.</h2>
@@ -161,7 +173,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <div class="footer-columns">
+        <div class="footer-columns" id="contacts">
             <!-- First Column: Location -->
             <div class="footer-column location">
                 <h3>LOCATION</h3>
@@ -188,19 +200,19 @@
                 <p>Sat: 10AM - 4PM</p>
                 <h3>SOCIALS</h3>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/yourpage" target="_blank" class="fb">
+                    <a href="https://www.behance.net/gallery/177018867/Graphic-Design-Portfolio" target="_blank" class="fb">
                         <img src="./resources/logo-fb.svg" alt="Facebook">
                     </a>
-                    <a href="https://www.facebook.com/yourpage" target="_blank" class="ig">
+                    <a href="https://www.behance.net/gallery/177018867/Graphic-Design-Portfolio" target="_blank" class="ig">
                         <img src="./resources/logo-ig.svg" alt="Instagram">
                     </a>
-                    <a href="https://www.facebook.com/yourpage" target="_blank" class="tiktok">
+                    <a href="https://www.behance.net/gallery/177018867/Graphic-Design-Portfolio" target="_blank" class="tiktok">
                         <img src="./resources/logo-tiktok.svg" alt="Tiktok">
                     </a>
                 </div>
                 <h3>CONTACT</h3>
                 <p>Phone: (123) 456-7890</p>
-                <p>Email: <a href="mailto:info@company.com" target="_blank">info@company.com</a></p>
+                <p>Email: <a href="mailto:jysn.alegarbes@gmail.com" target="_blank">info@company.com</a></p>
             </div>
         </div>
 
